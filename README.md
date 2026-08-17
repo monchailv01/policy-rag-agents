@@ -209,9 +209,9 @@ Everything is driven by `.env` (see `.env.example`):
 | `EMBEDDING_DEVICE` | `auto` | `auto` picks CUDA when a usable driver is present |
 | `RETRIEVAL_TOP_K` | `4` | sections returned per search |
 | `RRF_K` | `60` | RRF damping constant |
-| `RATE_LIMIT_PER_IP` | `10` | chat requests per client per window; `0` disables |
+| `RATE_LIMIT_PER_IP` | `100` | chat requests per client per window; `0` disables |
 | `RATE_LIMIT_WINDOW_SECONDS` | `300` | length of that window |
-| `RATE_LIMIT_DAILY_TOTAL` | `200` | ceiling for the whole service per day; `0` disables |
+| `RATE_LIMIT_DAILY_TOTAL` | `2000` | ceiling for the whole service per day; `0` disables |
 
 Because the LLM is addressed through an OpenAI-*compatible* base URL, moving the
 whole system onto a local GPU is a change to `OPENAI_BASE_URL` and `LLM_MODEL` —

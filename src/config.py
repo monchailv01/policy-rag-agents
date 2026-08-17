@@ -48,9 +48,9 @@ class Settings(BaseSettings):
     chat_db_path: Path = Path("chat_history.db")
 
     # --- Rate limiting (the public deployment shares one API key) -----------
-    rate_limit_per_ip: int = 10
+    rate_limit_per_ip: int = 100
     rate_limit_window_seconds: int = 300
-    rate_limit_daily_total: int = 200
+    rate_limit_daily_total: int = 2000
 
     @property
     def knowledge_base_file(self) -> Path:
