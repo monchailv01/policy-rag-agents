@@ -446,6 +446,15 @@ async function ask(question) {
     body: JSON.stringify({ question, thread_id: state.thread }),
   });
 
+  if (!res.ok) {
+    const detail = await res.json().catch(() => ({}));
+    addTurn("assistant", `<p style="color:#fbbf24">${esc(detail.detail || `Request failed (${res.status})`)}</p>`);
+    statusEl.remove();
+    state.busy = false;
+    $("#send").disabled = false;
+    return;
+  }
+
   const reader = res.body.getReader();
   const decoder = new TextDecoder();
   let buffer = "";
@@ -526,6 +535,9 @@ async function boot() {
     ["embed", i.embedder.replace(/^local:/, "") + " · " + i.dimension + "d"],
     ["index", i.policies + " policies / " + i.chunks + " sections"],
     ["langs", i.languages.join("+").toUpperCase()],
+    ...(state.meta.limits?.per_ip
+      ? [["limit", `${state.meta.limits.per_ip} / ${state.meta.limits.window_seconds / 60} min`]]
+      : []),
   ].map(([k, v]) => `<span class="chip">${esc(k)} <b>${esc(v)}</b></span>`).join("");
 
   $("#tab-kb").innerHTML = state.meta.policies.map(p => {

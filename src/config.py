@@ -47,6 +47,11 @@ class Settings(BaseSettings):
     port: int = 8100
     chat_db_path: Path = Path("chat_history.db")
 
+    # --- Rate limiting (the public deployment shares one API key) -----------
+    rate_limit_per_ip: int = 10
+    rate_limit_window_seconds: int = 300
+    rate_limit_daily_total: int = 200
+
     @property
     def knowledge_base_file(self) -> Path:
         """Absolute path to the knowledge base, resolved against the repo root."""

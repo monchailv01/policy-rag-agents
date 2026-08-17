@@ -75,7 +75,7 @@ survive a restart.
 
 ```bash
 pip install -r requirements-dev.txt
-pytest                      # 21 offline tests, no API key needed
+pytest                      # 30 offline tests, no API key needed
 ```
 
 ## 3. The RAG mechanism
@@ -178,10 +178,12 @@ src/
     bm25.py                 Okapi BM25 in NumPy
     embedder.py             local (sentence-transformers) or OpenAI backend
     hybrid_index.py         RRF fusion, edition de-duplication
+  ratelimit.py              per-client and per-day throttling for the public host
 scripts/
   inspect_retrieval.py      retrieval scores without the LLM
   capture_screenshots.py    regenerates screenshots/
-tests/                      21 offline tests
+deploy/                     systemd unit + Cloudflare Tunnel install script
+tests/                      30 offline tests
 ```
 
 ## 6. Screenshots
@@ -207,7 +209,30 @@ Everything is driven by `.env` (see `.env.example`):
 | `EMBEDDING_DEVICE` | `auto` | `auto` picks CUDA when a usable driver is present |
 | `RETRIEVAL_TOP_K` | `4` | sections returned per search |
 | `RRF_K` | `60` | RRF damping constant |
+| `RATE_LIMIT_PER_IP` | `10` | chat requests per client per window; `0` disables |
+| `RATE_LIMIT_WINDOW_SECONDS` | `300` | length of that window |
+| `RATE_LIMIT_DAILY_TOTAL` | `200` | ceiling for the whole service per day; `0` disables |
 
 Because the LLM is addressed through an OpenAI-*compatible* base URL, moving the
 whole system onto a local GPU is a change to `OPENAI_BASE_URL` and `LLM_MODEL` —
 no code change.
+
+## 8. Deployment
+
+`deploy/install.sh` publishes the app behind an existing Cloudflare Tunnel:
+
+```bash
+sudo bash deploy/install.sh      # -> https://bbl.mcp-digitalstudio.com
+```
+
+It installs `deploy/policy-assistant.service` (the app, bound to loopback only —
+the tunnel reaches it over localhost, so nothing needs to listen on the LAN),
+then adds a single ingress rule to `/etc/cloudflared/config.yml`. The tunnel
+config is backed up and validated before `cloudflared` is restarted, and the
+script prints the rollback command on the way out.
+
+**Rate limiting matters here.** A public deployment shares one API key with
+every visitor, so `/api/chat` is throttled per client *and* against a daily
+total for the whole service. The check runs before the graph does, so a rejected
+request costs nothing, and the browser shows the limit message instead of
+silently hanging.

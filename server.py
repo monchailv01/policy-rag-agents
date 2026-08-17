@@ -18,7 +18,7 @@ from contextlib import asynccontextmanager
 from pathlib import Path
 
 import uvicorn
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from langchain_core.messages import AIMessage, HumanMessage
@@ -28,6 +28,7 @@ from sse_starlette.sse import EventSourceResponse
 
 from src.config import PROJECT_ROOT, get_settings
 from src.graph import build_graph, get_retriever
+from src.ratelimit import RateLimiter
 from src.sessions import SessionStore
 
 WEB_DIR = PROJECT_ROOT / "web"
@@ -54,6 +55,11 @@ async def lifespan(app: FastAPI):
         app.state.retriever = await asyncio.to_thread(get_retriever)
         app.state.graph = build_graph(retriever=app.state.retriever, checkpointer=saver)
         app.state.sessions = SessionStore(settings.chat_db_file)
+        app.state.limiter = RateLimiter(
+            per_ip=settings.rate_limit_per_ip,
+            window_seconds=settings.rate_limit_window_seconds,
+            daily_total=settings.rate_limit_daily_total,
+        )
         try:
             yield
         finally:
@@ -82,6 +88,7 @@ async def meta() -> dict:
         "index": retriever.describe(),
         "mermaid": app.state.graph.get_graph().draw_mermaid(),
         "policies": list(policies.values()),
+        "limits": app.state.limiter.snapshot(),
     }
 
 
@@ -130,8 +137,12 @@ def _sse(event: str, **data) -> dict:
 
 
 @app.post("/api/chat")
-async def chat(request: ChatRequest) -> EventSourceResponse:
-    """Stream one turn of the workflow: node transitions, then answer tokens."""
+async def chat(request: ChatRequest, http_request: Request) -> EventSourceResponse:
+    """Stream one turn of the workflow: node transitions, then answer tokens.
+
+    Throttled before any token is spent, so a rejected request costs nothing.
+    """
+    app.state.limiter.check(http_request)
     thread_id = request.thread_id or f"web-{uuid.uuid4().hex[:10]}"
     app.state.sessions.create(thread_id)
     app.state.sessions.record_turn(thread_id, request.question)

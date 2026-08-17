@@ -1,0 +1,19 @@
+[Unit]
+Description=Siam Horizon Policy Assistant (LangGraph two-agent RAG)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=monchai
+Group=monchai
+WorkingDirectory=/home/monchai/policy-rag-agents
+# Reachable only from this host; the Cloudflare Tunnel connects over loopback,
+# so nothing needs to listen on the LAN. Change to 0.0.0.0 for local testing.
+Environment=HOST=127.0.0.1
+ExecStart=/home/monchai/policy-rag-agents/.venv/bin/python server.py
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
