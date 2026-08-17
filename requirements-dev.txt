@@ -1,0 +1,5 @@
+# Tooling used to produce the screenshots in screenshots/. Not needed to run
+# the assistant itself.
+-r requirements.txt
+playwright>=1.49
+pytest>=8.3

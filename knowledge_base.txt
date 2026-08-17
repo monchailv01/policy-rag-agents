@@ -1,0 +1,322 @@
+# Siam Horizon Group — Employee Policy Handbook (Extract)
+# บริษัท สยามฮอไรซัน กรุ๊ป จำกัด — คู่มือนโยบายพนักงาน (ฉบับย่อ)
+#
+# Format: each section starts with "### <POLICY_ID> | <LANG> | <TITLE>".
+# Every policy is published in parallel English and Thai editions that share the
+# same POLICY_ID. Both editions are authoritative.
+# Revision 2026.02 — effective 1 March 2026.
+
+### POL-HR-014 | EN | International Business Travel
+All international business travel must be approved in advance by the employee's
+direct line manager AND by the Head of Department. For trips longer than seven
+consecutive calendar days, or with a total estimated cost above THB 150,000, an
+additional approval from the Chief Operating Officer is mandatory. Travel
+requests must be submitted through the Horizon Travel Portal no later than
+fourteen calendar days before departure; requests filed later than this are only
+accepted for genuine emergencies and require a written justification.
+Employees at Manager level and below travel in economy class. Flights with a
+scheduled duration exceeding eight hours may be booked in premium economy.
+Business class is reserved for Director level and above, or for any employee
+travelling with a documented medical accommodation. All flights and hotels must
+be booked through the company's appointed travel agency, Andaman Travel Services,
+so that duty-of-care tracking and the corporate insurance policy remain valid.
+Every traveller is automatically enrolled in the corporate travel insurance
+programme, which covers medical treatment abroad up to USD 500,000, emergency
+evacuation, and trip cancellation. Travel to destinations that the Ministry of
+Foreign Affairs designates as high risk requires a separate security briefing
+with the Corporate Security team before ticketing. Expense rules for approved
+trips are set out in POL-FIN-021.
+
+### POL-HR-014 | TH | การเดินทางไปปฏิบัติงานต่างประเทศ
+การเดินทางไปปฏิบัติงานต่างประเทศทุกกรณีต้องได้รับอนุมัติล่วงหน้าจากผู้บังคับบัญชา
+โดยตรงและจากหัวหน้าฝ่ายงาน หากการเดินทางมีระยะเวลาเกินเจ็ดวันติดต่อกัน หรือมี
+ค่าใช้จ่ายรวมโดยประมาณเกิน 150,000 บาท จะต้องได้รับอนุมัติเพิ่มเติมจากประธาน
+เจ้าหน้าที่ฝ่ายปฏิบัติการ (COO) พนักงานต้องยื่นคำขอเดินทางผ่านระบบ Horizon Travel
+Portal ล่วงหน้าไม่น้อยกว่าสิบสี่วันก่อนวันออกเดินทาง คำขอที่ยื่นล่าช้ากว่ากำหนดจะ
+รับพิจารณาเฉพาะกรณีฉุกเฉินจริงและต้องมีเหตุผลชี้แจงเป็นลายลักษณ์อักษร
+พนักงานระดับผู้จัดการลงมาเดินทางด้วยชั้นประหยัด เที่ยวบินที่มีระยะเวลาบินเกินแปด
+ชั่วโมงสามารถจองชั้นประหยัดพิเศษได้ ชั้นธุรกิจสงวนไว้สำหรับระดับผู้อำนวยการขึ้นไป
+หรือพนักงานที่มีเอกสารรับรองความจำเป็นทางการแพทย์ การจองบัตรโดยสารและที่พัก
+ทั้งหมดต้องดำเนินการผ่านบริษัทตัวแทนที่บริษัทแต่งตั้ง คือ Andaman Travel Services
+เพื่อให้การติดตามดูแลความปลอดภัยและกรมธรรม์ประกันภัยหมู่ยังมีผลบังคับใช้
+พนักงานที่เดินทางจะได้รับความคุ้มครองจากประกันการเดินทางของบริษัทโดยอัตโนมัติ
+ครอบคลุมค่ารักษาพยาบาลในต่างประเทศสูงสุด 500,000 ดอลลาร์สหรัฐ การเคลื่อนย้าย
+ผู้ป่วยฉุกเฉิน และการยกเลิกการเดินทาง สำหรับปลายทางที่กระทรวงการต่างประเทศ
+ประกาศให้เป็นพื้นที่เสี่ยงสูง ต้องเข้ารับการบรรยายสรุปด้านความปลอดภัยกับทีม
+Corporate Security ก่อนออกบัตรโดยสาร ระเบียบการเบิกค่าใช้จ่ายอยู่ในนโยบาย POL-FIN-021
+
+### POL-FIN-021 | EN | Travel Expense Reimbursement and Per Diem
+Employees on approved business travel receive a daily per diem that covers meals
+and incidental expenses. The per diem is paid at a flat rate and does not require
+individual meal receipts. Current rates are USD 85 per day for North America and
+Europe, USD 65 per day for Japan, Singapore, Hong Kong and Australia, USD 45 per
+day for other locations in Asia, and THB 900 per day for domestic travel within
+Thailand. Where a meal is already provided by a conference organiser or a host
+company, the per diem for that day is reduced by thirty percent.
+Accommodation, airfare, visa fees, airport transfers and pre-booked ground
+transport are reimbursed at actual cost against original receipts and are not
+part of the per diem. Hotel rates must stay within the ceiling published quarterly
+by the Finance Department for each city. Alcoholic beverages, personal
+entertainment, in-flight shopping, spa services, and fines or penalties of any
+kind are never reimbursable.
+Expense claims must be filed in the Horizon Expense system within thirty calendar
+days of returning. Claims submitted after sixty days are forfeited unless the
+Chief Financial Officer grants a written exception. Reimbursement is paid with the
+next scheduled payroll run after approval. Foreign currency amounts are converted
+using the Bank of Thailand mid-market rate on the date the expense was incurred.
+Any single expense item above THB 20,000 requires the line manager's countersign
+in addition to the standard approval flow.
+
+### POL-FIN-021 | TH | การเบิกค่าใช้จ่ายในการเดินทางและเบี้ยเลี้ยง
+พนักงานที่เดินทางไปปฏิบัติงานตามที่ได้รับอนุมัติจะได้รับเบี้ยเลี้ยงรายวันสำหรับค่าอาหาร
+และค่าใช้จ่ายเบ็ดเตล็ด เบี้ยเลี้ยงจ่ายในอัตราเหมาจ่ายและไม่ต้องแนบใบเสร็จค่าอาหาร
+อัตราปัจจุบันคือ 85 ดอลลาร์สหรัฐต่อวันสำหรับอเมริกาเหนือและยุโรป 65 ดอลลาร์สหรัฐ
+ต่อวันสำหรับญี่ปุ่น สิงคโปร์ ฮ่องกง และออสเตรเลีย 45 ดอลลาร์สหรัฐต่อวันสำหรับ
+ประเทศอื่นในเอเชีย และ 900 บาทต่อวันสำหรับการเดินทางภายในประเทศไทย หากผู้จัดงาน
+หรือบริษัทเจ้าภาพจัดเลี้ยงอาหารให้แล้ว เบี้ยเลี้ยงของวันนั้นจะถูกหักลดลงร้อยละสามสิบ
+ค่าที่พัก ค่าบัตรโดยสารเครื่องบิน ค่าธรรมเนียมวีซ่า ค่ารถรับส่งสนามบิน และค่าเดินทาง
+ภาคพื้นดินที่จองล่วงหน้า เบิกได้ตามจ่ายจริงโดยใช้ใบเสร็จตัวจริง และไม่รวมอยู่ในเบี้ยเลี้ยง
+อัตราค่าที่พักต้องไม่เกินเพดานที่ฝ่ายการเงินประกาศเป็นรายไตรมาสสำหรับแต่ละเมือง
+เครื่องดื่มแอลกอฮอล์ ค่าบันเทิงส่วนตัว การซื้อสินค้าบนเครื่องบิน บริการสปา และค่าปรับ
+ทุกประเภท ไม่สามารถเบิกได้ในทุกกรณี
+ต้องยื่นเบิกค่าใช้จ่ายในระบบ Horizon Expense ภายในสามสิบวันนับจากวันเดินทางกลับ
+คำขอที่ยื่นเกินหกสิบวันจะถือว่าสละสิทธิ์ เว้นแต่ประธานเจ้าหน้าที่ฝ่ายการเงิน (CFO)
+อนุมัติข้อยกเว้นเป็นลายลักษณ์อักษร การจ่ายคืนจะดำเนินการพร้อมรอบจ่ายเงินเดือนถัดไป
+หลังได้รับอนุมัติ จำนวนเงินสกุลต่างประเทศแปลงค่าโดยใช้อัตรากลางของธนาคารแห่ง
+ประเทศไทย ณ วันที่เกิดค่าใช้จ่าย รายการค่าใช้จ่ายเดี่ยวที่มีมูลค่าเกิน 20,000 บาท
+ต้องมีลายเซ็นกำกับของผู้บังคับบัญชาเพิ่มเติมจากขั้นตอนอนุมัติปกติ
+
+### POL-HR-007 | EN | Remote and Hybrid Work
+Siam Horizon Group operates a hybrid working model. Employees in eligible roles
+work from the office at least three days per week, and Tuesday is a company-wide
+anchor day on which every team is expected to be on site. Teams may designate one
+additional fixed anchor day with the agreement of their department head.
+Fully remote arrangements are granted only by exception and must be renewed every
+six months. Remote employees must maintain a private, secure workspace and a
+broadband connection of at least 50 Mbps download and 10 Mbps upload. Working
+from a country other than Thailand for more than fourteen consecutive days
+requires prior clearance from both HR and the Tax team, because it may create a
+permanent establishment or personal tax liability.
+The company provides a one-time home office allowance of THB 15,000 for
+ergonomic furniture and equipment, claimable once every three years. Internet
+subscriptions and electricity are not reimbursed. Core collaboration hours are
+09:30 to 16:00 Indochina Time; employees are expected to be reachable during this
+window regardless of location. Recording of internal meetings requires the
+consent of all participants.
+
+### POL-HR-007 | TH | การทำงานทางไกลและการทำงานแบบไฮบริด
+บริษัท สยามฮอไรซัน กรุ๊ป ใช้รูปแบบการทำงานแบบไฮบริด พนักงานในตำแหน่งที่เข้าเกณฑ์
+ต้องเข้าปฏิบัติงานที่สำนักงานอย่างน้อยสามวันต่อสัปดาห์ โดยกำหนดให้วันอังคารเป็นวัน
+รวมพลของทั้งบริษัทที่ทุกทีมต้องเข้าสำนักงาน ทีมงานอาจกำหนดวันรวมพลประจำเพิ่มอีก
+หนึ่งวันได้โดยความเห็นชอบของหัวหน้าฝ่าย
+การทำงานทางไกลเต็มรูปแบบอนุมัติเป็นกรณีข้อยกเว้นเท่านั้น และต้องต่ออายุทุกหกเดือน
+พนักงานที่ทำงานทางไกลต้องมีพื้นที่ทำงานที่เป็นส่วนตัวและปลอดภัย พร้อมอินเทอร์เน็ต
+ความเร็วดาวน์โหลดอย่างน้อย 50 Mbps และอัปโหลด 10 Mbps การทำงานจากต่างประเทศ
+ติดต่อกันเกินสิบสี่วันต้องได้รับการอนุมัติล่วงหน้าจากทั้งฝ่ายทรัพยากรบุคคลและฝ่ายภาษี
+เนื่องจากอาจก่อให้เกิดสถานประกอบการถาวรหรือภาระภาษีส่วนบุคคล
+บริษัทสนับสนุนค่าอุปกรณ์สำนักงานที่บ้านแบบครั้งเดียวจำนวน 15,000 บาท สำหรับ
+เฟอร์นิเจอร์และอุปกรณ์ตามหลักการยศาสตร์ เบิกได้หนึ่งครั้งทุกสามปี ค่าอินเทอร์เน็ต
+รายเดือนและค่าไฟฟ้าไม่สามารถเบิกได้ ช่วงเวลาทำงานร่วมกันหลักคือ 09:30 ถึง 16:00 น.
+ตามเวลาอินโดจีน พนักงานต้องสามารถติดต่อได้ในช่วงเวลาดังกล่าวไม่ว่าจะทำงานจากที่ใด
+การบันทึกการประชุมภายในต้องได้รับความยินยอมจากผู้เข้าร่วมประชุมทุกคน
+
+### POL-HR-003 | EN | Annual Leave, Sick Leave and Public Holidays
+Full-time employees accrue fifteen working days of annual leave per calendar year,
+rising to eighteen days after three years of continuous service and to twenty-two
+days after seven years. Leave accrues monthly and may be taken once the employee
+has completed the one hundred and twenty day probation period. A maximum of five
+unused annual leave days may be carried into the following year and must be used
+before 31 March, after which they lapse without compensation.
+Annual leave of three consecutive days or more must be requested at least ten
+working days in advance. Requests are approved on a first-come basis subject to
+team coverage.
+Employees are entitled to thirty days of paid sick leave per year. A medical
+certificate from a licensed practitioner is required for any absence of three or
+more consecutive days. Sick leave cannot be carried over and is not paid out on
+resignation. The company observes the public holidays announced annually by the
+Bank of Thailand, plus two floating personal days that each employee may schedule
+freely with one week's notice. Unused floating days expire at year end.
+
+### POL-HR-003 | TH | วันลาพักร้อน วันลาป่วย และวันหยุดนักขัตฤกษ์
+พนักงานประจำได้รับสิทธิวันลาพักร้อนสิบห้าวันทำงานต่อปีปฏิทิน เพิ่มเป็นสิบแปดวันเมื่อ
+ทำงานต่อเนื่องครบสามปี และเพิ่มเป็นยี่สิบสองวันเมื่อทำงานครบเจ็ดปี สิทธิวันลาสะสม
+เป็นรายเดือนและใช้สิทธิได้เมื่อพ้นระยะทดลองงานหนึ่งร้อยยี่สิบวันแล้ว วันลาพักร้อนที่ยัง
+ไม่ได้ใช้สามารถยกยอดไปปีถัดไปได้ไม่เกินห้าวัน และต้องใช้ให้หมดก่อนวันที่ 31 มีนาคม
+มิฉะนั้นจะสิ้นสุดสิทธิโดยไม่มีการชดเชยเป็นเงิน
+การลาพักร้อนตั้งแต่สามวันติดต่อกันขึ้นไปต้องยื่นคำขอล่วงหน้าอย่างน้อยสิบวันทำงาน
+การอนุมัติพิจารณาตามลำดับการยื่นก่อนหลังโดยคำนึงถึงกำลังคนของทีม
+พนักงานมีสิทธิลาป่วยโดยได้รับค่าจ้างสามสิบวันต่อปี การลาป่วยตั้งแต่สามวันติดต่อกัน
+ขึ้นไปต้องแนบใบรับรองแพทย์จากแพทย์ที่มีใบอนุญาต วันลาป่วยไม่สามารถยกยอดและ
+ไม่จ่ายเป็นเงินเมื่อลาออก บริษัทถือปฏิบัติตามวันหยุดนักขัตฤกษ์ที่ธนาคารแห่งประเทศไทย
+ประกาศในแต่ละปี และให้วันหยุดส่วนตัวแบบยืดหยุ่นอีกสองวันซึ่งพนักงานเลือกวันได้เอง
+โดยแจ้งล่วงหน้าหนึ่งสัปดาห์ วันหยุดยืดหยุ่นที่ไม่ได้ใช้จะหมดอายุเมื่อสิ้นปี
+
+### POL-IT-011 | EN | Information Security and Acceptable Use
+Every employee is issued a company laptop with full-disk encryption and endpoint
+detection software that must not be disabled. Passwords must be at least fourteen
+characters and are managed through the corporate password manager; multi-factor
+authentication is mandatory on all company systems without exception.
+Company data is classified into four tiers: Public, Internal, Confidential and
+Restricted. Confidential and Restricted data may never be copied to personal
+devices, personal cloud storage, or removable media. Restricted data — which
+includes customer financial records, source code for trading systems, and
+employee personal data — may only be accessed from a company-managed device on
+the corporate network or the company VPN.
+Suspected security incidents, including phishing emails, lost devices and
+accidental disclosure, must be reported to the Security Operations Centre within
+one hour of discovery via the #sec-incident channel or the 24-hour hotline. There
+is no penalty for reporting in good faith, including for self-reported mistakes.
+Installing unapproved software, connecting personal USB storage to company
+laptops, and using public Wi-Fi without the VPN are all prohibited. Access rights
+are reviewed quarterly and revoked automatically on the last working day.
+
+### POL-IT-011 | TH | ความมั่นคงปลอดภัยสารสนเทศและการใช้งานที่เหมาะสม
+พนักงานทุกคนจะได้รับคอมพิวเตอร์แล็ปท็อปของบริษัทที่มีการเข้ารหัสทั้งดิสก์และติดตั้ง
+ซอฟต์แวร์ตรวจจับภัยคุกคามที่ปลายทาง ซึ่งห้ามปิดการทำงานโดยเด็ดขาด รหัสผ่านต้องมี
+ความยาวอย่างน้อยสิบสี่ตัวอักษรและบริหารจัดการผ่านโปรแกรมจัดการรหัสผ่านขององค์กร
+การยืนยันตัวตนแบบหลายปัจจัยเป็นข้อบังคับสำหรับทุกระบบของบริษัทโดยไม่มีข้อยกเว้น
+ข้อมูลของบริษัทแบ่งเป็นสี่ระดับ ได้แก่ ข้อมูลสาธารณะ ข้อมูลภายใน ข้อมูลลับ และข้อมูล
+ลับที่สุด ข้อมูลลับและข้อมูลลับที่สุดห้ามคัดลอกไปยังอุปกรณ์ส่วนตัว บริการคลาวด์ส่วนตัว
+หรือสื่อบันทึกแบบถอดได้ ข้อมูลลับที่สุดซึ่งรวมถึงข้อมูลทางการเงินของลูกค้า ซอร์สโค้ด
+ของระบบซื้อขายหลักทรัพย์ และข้อมูลส่วนบุคคลของพนักงาน สามารถเข้าถึงได้เฉพาะจาก
+อุปกรณ์ที่บริษัทบริหารจัดการ ผ่านเครือข่ายองค์กรหรือ VPN ของบริษัทเท่านั้น
+เหตุการณ์ที่สงสัยว่าเป็นภัยคุกคามความปลอดภัย รวมถึงอีเมลหลอกลวง อุปกรณ์สูญหาย
+และการเปิดเผยข้อมูลโดยไม่ตั้งใจ ต้องรายงานต่อศูนย์ปฏิบัติการความมั่นคงปลอดภัยภายใน
+หนึ่งชั่วโมงนับจากพบเหตุ ผ่านช่องทาง #sec-incident หรือสายด่วนตลอดยี่สิบสี่ชั่วโมง
+การรายงานโดยสุจริตจะไม่มีบทลงโทษ รวมถึงกรณีที่รายงานความผิดพลาดของตนเอง
+ห้ามติดตั้งซอฟต์แวร์ที่ไม่ได้รับอนุมัติ ห้ามเชื่อมต่ออุปกรณ์เก็บข้อมูล USB ส่วนตัวกับ
+แล็ปท็อปของบริษัท และห้ามใช้ Wi-Fi สาธารณะโดยไม่เชื่อมต่อ VPN สิทธิ์การเข้าถึงจะถูก
+ทบทวนทุกไตรมาสและเพิกถอนโดยอัตโนมัติในวันทำงานวันสุดท้าย
+
+### POL-IT-019 | EN | Use of Generative AI Tools
+Employees may use the company-approved generative AI platform for drafting,
+summarising, translating and writing code. Only the enterprise tenant provided by
+the IT department may be used for work purposes; consumer accounts on public AI
+services are not permitted for any company data.
+Data classified as Confidential or Restricted under POL-IT-011 must never be
+entered into any AI tool, including the approved enterprise tenant, unless the
+specific use case has been registered with the Data Governance Office. Customer
+names, account numbers, national ID numbers and unreleased financial results are
+explicitly out of scope for AI processing.
+Any AI-generated content that is published externally, sent to a client, or
+committed to a production system must be reviewed and approved by a named human
+owner, who remains fully accountable for its accuracy. AI-generated code must
+pass the standard code review and security scanning pipeline before merge.
+Employees must disclose substantial use of AI assistance in formal deliverables
+such as research reports and client presentations. Using AI tools to make final
+decisions about hiring, promotion, performance rating or credit approval is
+prohibited.
+
+### POL-IT-019 | TH | การใช้เครื่องมือปัญญาประดิษฐ์เชิงสร้างสรรค์
+พนักงานสามารถใช้แพลตฟอร์มปัญญาประดิษฐ์เชิงสร้างสรรค์ที่บริษัทอนุมัติ เพื่อการร่าง
+เอกสาร สรุปความ แปลภาษา และเขียนโค้ด การใช้งานเพื่อวัตถุประสงค์ของงานต้องใช้ผ่าน
+บัญชีองค์กรที่ฝ่ายเทคโนโลยีสารสนเทศจัดให้เท่านั้น ห้ามใช้บัญชีผู้ใช้ทั่วไปบนบริการ
+ปัญญาประดิษฐ์สาธารณะกับข้อมูลของบริษัทในทุกกรณี
+ข้อมูลที่จัดชั้นเป็นข้อมูลลับหรือข้อมูลลับที่สุดตามนโยบาย POL-IT-011 ห้ามป้อนเข้าสู่
+เครื่องมือปัญญาประดิษฐ์ใด ๆ รวมถึงบัญชีองค์กรที่ได้รับอนุมัติ เว้นแต่กรณีการใช้งานนั้น
+ได้ลงทะเบียนไว้กับสำนักงานกำกับดูแลข้อมูลแล้ว ชื่อลูกค้า เลขที่บัญชี เลขประจำตัว
+ประชาชน และผลประกอบการที่ยังไม่เปิดเผย อยู่นอกขอบเขตการประมวลผลด้วยปัญญา
+ประดิษฐ์โดยชัดแจ้ง
+เนื้อหาที่สร้างโดยปัญญาประดิษฐ์ซึ่งจะเผยแพร่สู่ภายนอก ส่งให้ลูกค้า หรือนำขึ้นระบบ
+ที่ใช้งานจริง ต้องผ่านการตรวจสอบและอนุมัติโดยผู้รับผิดชอบที่ระบุชื่อชัดเจน ซึ่งยังคงมี
+ความรับผิดชอบเต็มที่ต่อความถูกต้องของเนื้อหา โค้ดที่สร้างโดยปัญญาประดิษฐ์ต้องผ่าน
+กระบวนการตรวจทานโค้ดและการสแกนความปลอดภัยตามมาตรฐานก่อนรวมเข้าระบบ
+พนักงานต้องเปิดเผยการใช้ปัญญาประดิษฐ์ช่วยงานในสัดส่วนที่มีนัยสำคัญ สำหรับงานส่งมอบ
+ที่เป็นทางการ เช่น รายงานวิจัยและงานนำเสนอต่อลูกค้า ห้ามใช้เครื่องมือปัญญาประดิษฐ์
+ตัดสินใจขั้นสุดท้ายเกี่ยวกับการจ้างงาน การเลื่อนตำแหน่ง การประเมินผลงาน หรือการ
+อนุมัติสินเชื่อ
+
+### POL-HR-030 | EN | Code of Conduct, Gifts and Anti-Bribery
+Employees must act with integrity and avoid situations where personal interests
+conflict with those of the company. Any outside employment, board seat, or
+material shareholding in a competitor, supplier or client must be declared to
+Compliance within fourteen days of it arising.
+Gifts and hospitality received from a business partner may be accepted only if
+they are modest, infrequent, and would not embarrass the company if made public.
+Any single gift with an estimated value above THB 3,000, and any hospitality
+above THB 5,000 per person, must be declared in the Gift Register within seven
+days. Cash and cash equivalents such as vouchers and gift cards must always be
+refused regardless of value. Gifts may never be accepted while a tender,
+contract renewal or credit decision involving that party is in progress.
+Facilitation payments are prohibited without exception, including small payments
+to speed up routine government processes. Employees who are offered or asked for
+a bribe must report it to Compliance immediately. The company operates a
+whistleblowing channel that accepts anonymous reports and guarantees protection
+from retaliation for anyone reporting a concern in good faith.
+
+### POL-HR-030 | TH | จรรยาบรรณ การรับของขวัญ และการต่อต้านการให้สินบน
+พนักงานต้องปฏิบัติงานด้วยความซื่อสัตย์สุจริตและหลีกเลี่ยงสถานการณ์ที่ผลประโยชน์
+ส่วนตนขัดกับผลประโยชน์ของบริษัท การรับทำงานภายนอก การดำรงตำแหน่งกรรมการ
+หรือการถือหุ้นในสัดส่วนที่มีนัยสำคัญในบริษัทคู่แข่ง ผู้จัดหา หรือลูกค้า ต้องแจ้งต่อฝ่าย
+กำกับดูแลการปฏิบัติงานภายในสิบสี่วันนับแต่เกิดเหตุ
+ของขวัญและการรับรองจากคู่ค้าสามารถรับได้เฉพาะเมื่อมีมูลค่าพอสมควร ไม่บ่อยครั้ง และ
+ไม่ทำให้บริษัทเสื่อมเสียหากถูกเปิดเผยต่อสาธารณะ ของขวัญชิ้นเดียวที่มีมูลค่าประมาณ
+เกิน 3,000 บาท และการรับรองที่มีมูลค่าเกิน 5,000 บาทต่อคน ต้องบันทึกในทะเบียน
+ของขวัญภายในเจ็ดวัน เงินสดและสิ่งเทียบเท่าเงินสด เช่น บัตรกำนัลและบัตรของขวัญ
+ต้องปฏิเสธเสมอไม่ว่าจะมีมูลค่าเท่าใด และห้ามรับของขวัญในระหว่างที่มีการประกวดราคา
+การต่อสัญญา หรือการพิจารณาสินเชื่อกับคู่สัญญารายนั้นอยู่
+ห้ามจ่ายเงินอำนวยความสะดวกโดยเด็ดขาดไม่มีข้อยกเว้น รวมถึงเงินจำนวนเล็กน้อยเพื่อเร่ง
+ขั้นตอนราชการตามปกติ พนักงานที่ถูกเสนอหรือถูกเรียกรับสินบนต้องรายงานต่อฝ่ายกำกับ
+ดูแลการปฏิบัติงานทันที บริษัทมีช่องทางแจ้งเบาะแสที่รับเรื่องแบบไม่เปิดเผยตัวตน และ
+รับประกันการคุ้มครองจากการถูกกลั่นแกล้งสำหรับผู้แจ้งเบาะแสโดยสุจริต
+
+### POL-HR-022 | EN | Learning and Development Budget
+Each full-time employee has an annual learning budget of THB 25,000, which may be
+spent on courses, certifications, conference tickets, technical books and
+subscriptions to professional publications. The budget runs on the calendar year
+and does not carry over.
+Requests are approved by the line manager for amounts up to THB 10,000. Anything
+above that also requires Head of Department sign-off. Certifications with an exam
+fee above THB 30,000 may be co-funded from the departmental budget by agreement.
+Where the company pays for a certification or programme costing more than
+THB 50,000, the employee agrees to a twelve-month retention period; if they
+resign within that period, a pro-rated portion is recovered from the final salary
+payment. Employees are entitled to five paid study days per year for examination
+preparation. Internal knowledge-sharing sessions do not consume the budget and
+count towards the annual development goal recorded in the performance review.
+
+### POL-HR-022 | TH | งบประมาณการเรียนรู้และพัฒนาตนเอง
+พนักงานประจำแต่ละคนมีงบประมาณการเรียนรู้ประจำปีจำนวน 25,000 บาท ซึ่งสามารถ
+ใช้กับหลักสูตรอบรม การสอบใบรับรอง บัตรเข้าร่วมงานสัมมนา หนังสือทางเทคนิค และ
+ค่าสมาชิกวารสารวิชาชีพ งบประมาณคิดตามปีปฏิทินและไม่สามารถยกยอดไปปีถัดไป
+คำขอที่มีมูลค่าไม่เกิน 10,000 บาท อนุมัติโดยผู้บังคับบัญชาโดยตรง หากเกินกว่านั้น
+ต้องได้รับการลงนามจากหัวหน้าฝ่ายด้วย ใบรับรองที่มีค่าธรรมเนียมสอบเกิน 30,000 บาท
+อาจขอสมทบจากงบประมาณของฝ่ายได้ตามข้อตกลง
+กรณีที่บริษัทออกค่าใช้จ่ายสำหรับใบรับรองหรือหลักสูตรที่มีมูลค่าเกิน 50,000 บาท
+พนักงานตกลงผูกพันระยะเวลาปฏิบัติงานต่อเนื่องสิบสองเดือน หากลาออกก่อนครบกำหนด
+บริษัทจะเรียกคืนตามสัดส่วนจากเงินเดือนงวดสุดท้าย พนักงานมีสิทธิลาเพื่อเตรียมสอบ
+โดยได้รับค่าจ้างห้าวันต่อปี การจัดกิจกรรมแบ่งปันความรู้ภายในองค์กรไม่นับรวมใน
+งบประมาณนี้ และนับเป็นผลงานตามเป้าหมายการพัฒนาประจำปีในการประเมินผลงาน
+
+### POL-OPS-009 | EN | Workplace Health, Safety and Incident Reporting
+The company maintains a safe workplace in line with the Occupational Safety,
+Health and Environment Act. Fire evacuation drills are held twice a year and
+attendance is mandatory for all staff present on site. Every floor has designated
+fire wardens and at least two trained first aiders.
+All workplace accidents, near misses and unsafe conditions must be reported to
+the Facilities team and logged in the Incident Register on the same working day,
+however minor they appear. Near-miss reporting is actively encouraged and is
+never used in performance evaluation.
+Employees who feel unwell with a suspected infectious illness must not come to
+the office and should work from home or take sick leave under POL-HR-003.
+The company provides an annual health check for all employees and an Employee
+Assistance Programme offering confidential counselling, available to employees
+and their immediate family at no cost. Contractors and visitors must be signed in
+at reception, wear a visitor badge, and be accompanied in restricted areas at all
+times.
+
+### POL-OPS-009 | TH | อาชีวอนามัย ความปลอดภัยในการทำงาน และการรายงานอุบัติการณ์
+บริษัทดูแลสถานที่ทำงานให้ปลอดภัยตามพระราชบัญญัติความปลอดภัย อาชีวอนามัย และ
+สภาพแวดล้อมในการทำงาน มีการฝึกซ้อมอพยพหนีไฟปีละสองครั้ง และพนักงานทุกคนที่อยู่
+ในสำนักงานต้องเข้าร่วม ทุกชั้นมีผู้ทำหน้าที่ดับเพลิงประจำชั้นและผู้ผ่านการอบรม
+ปฐมพยาบาลอย่างน้อยสองคน
+อุบัติเหตุจากการทำงาน เหตุการณ์เกือบเกิดอุบัติเหตุ และสภาพการทำงานที่ไม่ปลอดภัย
+ทุกกรณี ต้องรายงานต่อฝ่ายอาคารสถานที่และบันทึกในทะเบียนอุบัติการณ์ภายในวันทำงาน
+เดียวกัน ไม่ว่าจะดูเป็นเรื่องเล็กน้อยเพียงใด บริษัทสนับสนุนการรายงานเหตุการณ์เกือบเกิด
+อุบัติเหตุอย่างจริงจัง และจะไม่นำไปใช้ในการประเมินผลการปฏิบัติงาน
+พนักงานที่รู้สึกไม่สบายและสงสัยว่าเป็นโรคติดต่อ ต้องไม่เข้ามาที่สำนักงาน โดยให้ทำงาน
+จากที่บ้านหรือใช้สิทธิลาป่วยตามนโยบาย POL-HR-003
+บริษัทจัดให้มีการตรวจสุขภาพประจำปีสำหรับพนักงานทุกคน และมีโครงการช่วยเหลือ
+พนักงานซึ่งให้บริการปรึกษาเชิงจิตวิทยาโดยรักษาความลับ พนักงานและครอบครัวสายตรง
+ใช้บริการได้โดยไม่มีค่าใช้จ่าย ผู้รับเหมาและผู้มาติดต่อต้องลงทะเบียนที่แผนกต้อนรับ
+ติดบัตรผู้มาติดต่อ และต้องมีผู้ดูแลร่วมตลอดเวลาเมื่อเข้าพื้นที่หวงห้าม
