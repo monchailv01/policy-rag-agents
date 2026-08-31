@@ -25,7 +25,7 @@ from src.config import Settings, get_settings
 from src.retrieval.bm25 import BM25Index
 from src.retrieval.chunker import PolicyChunk, load_chunks
 from src.retrieval.embedder import Embedder, get_embedder
-from src.retrieval.tokenizer import tokenize
+from src.retrieval.tokenizer import extract_policy_ids, tokenize
 
 
 @dataclass(frozen=True, slots=True)
@@ -135,6 +135,17 @@ class HybridRetriever:
         bm25_ranks = _ranks_from_scores(bm25_scores)
         dense_ranks = _ranks_from_scores(dense_scores)
         fused = 1.0 / (self.rrf_k + bm25_ranks + 1) + 1.0 / (self.rrf_k + dense_ranks + 1)
+
+        # A query that names a policy code is an unambiguous reference: the
+        # right answer is that policy, whatever the rankers think — cross-
+        # references in *other* sections must not outrank the section itself.
+        # The boost dwarfs any possible RRF sum (max 2/(rrf_k+1)), so named
+        # policies always surface first while keeping their relative order.
+        named = set(extract_policy_ids(query))
+        if named:
+            for index, chunk in enumerate(self.chunks):
+                if chunk.policy_id.lower() in named:
+                    fused[index] += 1.0
 
         ordered = np.argsort(-fused, kind="stable")
         by_policy = {c.policy_id: {} for c in self.chunks}

@@ -4,7 +4,7 @@
 # Format: each section starts with "### <POLICY_ID> | <LANG> | <TITLE>".
 # Every policy is published in parallel English and Thai editions that share the
 # same POLICY_ID. Both editions are authoritative.
-# Revision 2026.02 — effective 1 March 2026.
+# Revision 2026.08 — effective 1 September 2026.
 
 ### POL-HR-014 | EN | International Business Travel
 All international business travel must be approved in advance by the employee's
@@ -320,3 +320,305 @@ times.
 พนักงานซึ่งให้บริการปรึกษาเชิงจิตวิทยาโดยรักษาความลับ พนักงานและครอบครัวสายตรง
 ใช้บริการได้โดยไม่มีค่าใช้จ่าย ผู้รับเหมาและผู้มาติดต่อต้องลงทะเบียนที่แผนกต้อนรับ
 ติดบัตรผู้มาติดต่อ และต้องมีผู้ดูแลร่วมตลอดเวลาเมื่อเข้าพื้นที่หวงห้าม
+
+### POL-HR-005 | EN | Working Hours, Overtime and Compensation
+The standard working week is forty hours, Monday to Friday. Employees may start
+between 08:00 and 10:00 and finish accordingly, provided they are reachable
+during the core collaboration hours defined in POL-HR-007. Lunch break is one
+hour and is not counted as working time.
+Overtime must be approved in writing by the line manager before the work is
+performed; retroactive claims are accepted only for genuine operational
+emergencies. Approved overtime on a working day is compensated at one and a half
+times the hourly rate, and work on a weekend or public holiday at two times the
+hourly rate, in line with Thai labour law. Employees at Manager level and above
+are expected to manage their own hours and are not eligible for overtime pay.
+Total overtime may not exceed thirty-six hours per calendar month without
+approval from the Head of Department. Employees working approved overtime past
+20:00 may claim a meal allowance of THB 150, and the cost of a taxi home is
+reimbursed for approved work ending after 22:00, both against receipts under the
+expense rules in POL-FIN-021. Time worked is recorded in the Horizon Time system
+and must be submitted by the last working day of each month.
+
+### POL-HR-005 | TH | เวลาทำงาน การทำงานล่วงเวลา และค่าตอบแทน
+เวลาทำงานมาตรฐานคือสี่สิบชั่วโมงต่อสัปดาห์ วันจันทร์ถึงวันศุกร์ พนักงานสามารถเลือก
+เวลาเริ่มงานระหว่าง 08:00 ถึง 10:00 น. และเลิกงานตามสัดส่วน โดยต้องสามารถติดต่อได้
+ในช่วงเวลาทำงานร่วมกันหลักตามนโยบาย POL-HR-007 เวลาพักกลางวันหนึ่งชั่วโมงไม่นับ
+เป็นเวลาทำงาน
+การทำงานล่วงเวลาต้องได้รับอนุมัติเป็นลายลักษณ์อักษรจากผู้บังคับบัญชาโดยตรงก่อน
+เริ่มปฏิบัติงาน การขอเบิกย้อนหลังรับพิจารณาเฉพาะกรณีฉุกเฉินทางปฏิบัติการจริงเท่านั้น
+งานล่วงเวลาในวันทำงานปกติจ่ายค่าตอบแทนหนึ่งเท่าครึ่งของอัตราค่าจ้างรายชั่วโมง และ
+งานในวันหยุดสุดสัปดาห์หรือวันหยุดนักขัตฤกษ์จ่ายสองเท่า ตามกฎหมายแรงงานไทย
+พนักงานระดับผู้จัดการขึ้นไปมีหน้าที่บริหารเวลาทำงานของตนเองและไม่มีสิทธิได้รับ
+ค่าล่วงเวลา
+ชั่วโมงทำงานล่วงเวลารวมต้องไม่เกินสามสิบหกชั่วโมงต่อเดือนปฏิทิน เว้นแต่ได้รับอนุมัติ
+จากหัวหน้าฝ่าย พนักงานที่ทำงานล่วงเวลาที่ได้รับอนุมัติเกิน 20:00 น. เบิกค่าอาหารได้
+150 บาท และเบิกค่าแท็กซี่กลับบ้านได้สำหรับงานที่เลิกหลัง 22:00 น. โดยแนบใบเสร็จ
+ตามระเบียบการเบิกจ่ายในนโยบาย POL-FIN-021 เวลาทำงานบันทึกในระบบ Horizon Time
+และต้องส่งภายในวันทำงานสุดท้ายของแต่ละเดือน
+
+### POL-HR-018 | EN | Parental and Family Leave
+Employees expecting a child are entitled to ninety-eight days of maternity leave,
+including public holidays that fall within the period, in accordance with Thai
+labour law. The company pays full salary for the first sixty days; the remainder
+is covered under the social security scheme. Maternity leave may begin up to
+thirty days before the expected due date. Paid time off for prenatal medical
+appointments is granted in addition and counted as working time.
+Fathers and legally recognised partners are entitled to fifteen working days of
+paid paternity leave, to be taken within ninety days of the birth. Employees who
+adopt a child under seven years of age receive the same entitlements as birth
+parents. Employees undergoing fertility treatment may take up to five paid days
+per year for medical procedures with a doctor's confirmation.
+Employees returning from parental leave may request a reduced schedule of eighty
+percent for the first two months at pro-rated pay, and remote arrangements under
+POL-HR-007 are considered favourably during the child's first year. The office
+provides a private nursing room on every floor with refrigeration facilities.
+Parental leave does not interrupt continuous service for the seniority-based
+entitlements in POL-HR-003 and does not affect the annual bonus assessment.
+
+### POL-HR-018 | TH | การลาเพื่อดูแลบุตรและครอบครัว
+พนักงานที่ตั้งครรภ์มีสิทธิลาคลอดเก้าสิบแปดวันโดยนับรวมวันหยุดนักขัตฤกษ์ที่อยู่ใน
+ช่วงเวลาดังกล่าว ตามกฎหมายแรงงานไทย บริษัทจ่ายค่าจ้างเต็มจำนวนหกสิบวันแรก
+ส่วนที่เหลือใช้สิทธิจากกองทุนประกันสังคม การลาคลอดเริ่มได้ล่วงหน้าไม่เกินสามสิบวัน
+ก่อนกำหนดคลอด การลาเพื่อตรวจครรภ์ตามนัดแพทย์ได้รับค่าจ้างเพิ่มเติมและนับเป็น
+เวลาทำงาน
+บิดาและคู่ชีวิตที่ได้รับการรับรองตามกฎหมายมีสิทธิลาเพื่อดูแลบุตรโดยได้รับค่าจ้าง
+สิบห้าวันทำงาน โดยต้องใช้สิทธิภายในเก้าสิบวันนับจากวันคลอด พนักงานที่รับบุตร
+บุญธรรมอายุต่ำกว่าเจ็ดปีได้รับสิทธิเช่นเดียวกับบิดามารดาโดยกำเนิด พนักงานที่เข้ารับ
+การรักษาภาวะมีบุตรยากลาได้ไม่เกินห้าวันต่อปีโดยได้รับค่าจ้าง สำหรับหัตถการทาง
+การแพทย์ที่มีคำยืนยันจากแพทย์
+พนักงานที่กลับจากการลาเพื่อดูแลบุตรสามารถขอลดเวลาทำงานเหลือร้อยละแปดสิบใน
+สองเดือนแรกโดยรับค่าจ้างตามสัดส่วน และคำขอทำงานทางไกลตามนโยบาย POL-HR-007
+จะได้รับการพิจารณาเป็นพิเศษในช่วงปีแรกของบุตร สำนักงานจัดห้องให้นมบุตรส่วนตัว
+พร้อมตู้เย็นทุกชั้น การลาเพื่อดูแลบุตรไม่ตัดอายุงานต่อเนื่องสำหรับสิทธิตามอายุงานใน
+นโยบาย POL-HR-003 และไม่มีผลต่อการพิจารณาโบนัสประจำปี
+
+### POL-HR-026 | EN | Resignation, Notice Period and Exit Process
+Employees below Manager level must give at least thirty days' written notice of
+resignation; employees at Manager level and above must give sixty days. Notice is
+submitted through the HR portal and takes effect on acknowledgement by HR, not on
+verbal communication to a colleague. The company may, at its discretion, place a
+departing employee on garden leave for part or all of the notice period at full
+pay, particularly for roles with access to Restricted data as defined in
+POL-IT-011.
+Unused annual leave accrued in the current year is paid out with the final salary
+at the base daily rate; sick leave and floating days are not paid out, as set out
+in POL-HR-003. Any training cost recovery under the retention terms of
+POL-HR-022 is deducted from the final payment. Company property — laptop, access
+card, corporate credit card and any equipment claimed under the home office
+allowance within the last twelve months — must be returned no later than the last
+working day, when system access is revoked under POL-IT-011.
+Every departing employee is invited to a confidential exit interview with HR.
+For twelve months after leaving, former employees may not solicit company staff
+to join another employer, and confidentiality obligations regarding customer and
+company information continue indefinitely.
+
+### POL-HR-026 | TH | การลาออก ระยะเวลาบอกกล่าวล่วงหน้า และกระบวนการพ้นสภาพ
+พนักงานระดับต่ำกว่าผู้จัดการต้องยื่นหนังสือลาออกล่วงหน้าอย่างน้อยสามสิบวัน พนักงาน
+ระดับผู้จัดการขึ้นไปต้องยื่นล่วงหน้าหกสิบวัน การลาออกให้ยื่นผ่านระบบ HR portal และ
+มีผลเมื่อฝ่ายทรัพยากรบุคคลตอบรับ ไม่ใช่เมื่อแจ้งด้วยวาจาต่อเพื่อนร่วมงาน บริษัทอาจ
+ใช้ดุลยพินิจให้พนักงานที่ลาออกหยุดปฏิบัติงานโดยได้รับค่าจ้างเต็มจำนวนตลอดหรือ
+บางส่วนของระยะเวลาบอกกล่าว โดยเฉพาะตำแหน่งที่เข้าถึงข้อมูลลับที่สุดตามนโยบาย
+POL-IT-011
+วันลาพักร้อนที่สะสมในปีปัจจุบันและยังไม่ได้ใช้จะจ่ายคืนพร้อมเงินเดือนงวดสุดท้ายตาม
+อัตราค่าจ้างพื้นฐานรายวัน ส่วนวันลาป่วยและวันหยุดยืดหยุ่นไม่จ่ายคืนตามนโยบาย
+POL-HR-003 กรณีมีภาระคืนค่าฝึกอบรมตามเงื่อนไขระยะเวลาผูกพันในนโยบาย POL-HR-022
+จะหักจากเงินงวดสุดท้าย ทรัพย์สินของบริษัท ได้แก่ แล็ปท็อป บัตรผ่านเข้าออก บัตร
+เครดิตองค์กร และอุปกรณ์ที่เบิกตามสิทธิค่าอุปกรณ์สำนักงานที่บ้านภายในสิบสองเดือน
+ล่าสุด ต้องส่งคืนไม่ช้ากว่าวันทำงานวันสุดท้าย ซึ่งเป็นวันที่สิทธิ์เข้าถึงระบบถูกเพิกถอน
+ตามนโยบาย POL-IT-011
+พนักงานที่พ้นสภาพทุกคนจะได้รับเชิญเข้าสัมภาษณ์ก่อนลาออกแบบรักษาความลับกับฝ่าย
+ทรัพยากรบุคคล ภายในสิบสองเดือนหลังพ้นสภาพ อดีตพนักงานต้องไม่ชักชวนพนักงาน
+ของบริษัทไปร่วมงานกับนายจ้างรายอื่น และหน้าที่รักษาความลับของข้อมูลลูกค้าและ
+ข้อมูลบริษัทยังคงมีผลตลอดไป
+
+### POL-FIN-008 | EN | Procurement and Purchase Approvals
+All purchases of goods and services for the company must go through the Horizon
+Procure system. A purchase order is required for any commitment above THB 20,000;
+invoices without a matching purchase order are returned to the requester. For
+purchases above THB 100,000, at least three competitive quotations must be
+attached, or a written sole-source justification approved by the Head of
+Department.
+Approval authority follows the value of the full contract, not the first
+instalment: line managers approve up to THB 50,000, Heads of Department up to
+THB 250,000, the CFO up to THB 1,000,000, and anything above that requires CEO
+approval. Splitting a purchase into smaller orders to stay under an approval
+threshold is a disciplinary offence.
+New vendors must complete onboarding, including anti-bribery screening consistent
+with POL-HR-030, before a first order is placed. Software, cloud services and IT
+hardware may only be procured through the IT department so that the security
+requirements of POL-IT-011 are met; business units may not purchase software
+subscriptions directly on corporate cards. Contracts that involve processing
+customer personal data additionally require Data Protection Officer review under
+POL-OPS-015 before signature.
+
+### POL-FIN-008 | TH | การจัดซื้อจัดจ้างและอำนาจอนุมัติการสั่งซื้อ
+การจัดซื้อสินค้าและบริการของบริษัททุกรายการต้องดำเนินการผ่านระบบ Horizon Procure
+การสั่งซื้อที่มีมูลค่าเกิน 20,000 บาทต้องออกใบสั่งซื้อ ใบแจ้งหนี้ที่ไม่มีใบสั่งซื้อรองรับ
+จะถูกส่งคืนผู้ขอซื้อ การจัดซื้อที่มีมูลค่าเกิน 100,000 บาทต้องแนบใบเสนอราคาเปรียบเทียบ
+อย่างน้อยสามราย หรือมีหนังสือชี้แจงเหตุผลการจัดซื้อจากผู้ขายรายเดียวที่หัวหน้าฝ่าย
+อนุมัติ
+อำนาจอนุมัติพิจารณาจากมูลค่าสัญญาเต็มจำนวน ไม่ใช่งวดชำระแรก ผู้บังคับบัญชา
+โดยตรงอนุมัติได้ไม่เกิน 50,000 บาท หัวหน้าฝ่ายไม่เกิน 250,000 บาท ประธานเจ้าหน้าที่
+ฝ่ายการเงิน (CFO) ไม่เกิน 1,000,000 บาท และมูลค่าที่สูงกว่านั้นต้องได้รับอนุมัติจาก
+ประธานเจ้าหน้าที่บริหาร (CEO) การแบ่งซื้อเป็นรายการย่อยเพื่อหลบเกณฑ์อำนาจอนุมัติ
+ถือเป็นความผิดทางวินัย
+ผู้ขายรายใหม่ต้องผ่านกระบวนการขึ้นทะเบียน รวมถึงการตรวจสอบด้านการต่อต้าน
+การให้สินบนตามแนวทางนโยบาย POL-HR-030 ก่อนออกใบสั่งซื้อครั้งแรก ซอฟต์แวร์
+บริการคลาวด์ และฮาร์ดแวร์คอมพิวเตอร์ต้องจัดซื้อผ่านฝ่ายเทคโนโลยีสารสนเทศเท่านั้น
+เพื่อให้เป็นไปตามข้อกำหนดความปลอดภัยของนโยบาย POL-IT-011 หน่วยงานธุรกิจห้าม
+ซื้อซอฟต์แวร์แบบสมัครสมาชิกโดยตรงด้วยบัตรเครดิตองค์กร สัญญาที่เกี่ยวข้องกับการ
+ประมวลผลข้อมูลส่วนบุคคลของลูกค้าต้องผ่านการตรวจทานจากเจ้าหน้าที่คุ้มครองข้อมูล
+ส่วนบุคคลตามนโยบาย POL-OPS-015 ก่อนลงนามด้วย
+
+### POL-FIN-034 | EN | Corporate Credit Cards and Cash Advances
+Corporate credit cards are issued to employees at Manager level and above, and to
+other employees who travel on business more than four times a year, with the
+line manager's endorsement. The standard monthly limit is THB 150,000; temporary
+increases for a specific trip or event are approved by the CFO.
+The corporate card may be used only for legitimate business expenses such as
+approved travel under POL-HR-014, client entertainment within the limits of
+POL-HR-030, and purchases properly authorised under POL-FIN-008. Personal
+spending on the corporate card is prohibited even if repaid. Receipts must be
+submitted in the Horizon Expense system within fourteen days of the transaction;
+cardholders with items unreconciled for more than sixty days have the card
+suspended automatically.
+Employees without a corporate card may request a cash advance of up to
+THB 40,000 for an approved business trip, paid no earlier than seven days before
+departure. Advances must be cleared against actual expenses and per diem under
+POL-FIN-021 within fourteen days of return, and any unspent balance repaid in
+full. A lost or stolen corporate card must be reported to the issuing bank and
+to the Finance Department within twenty-four hours.
+
+### POL-FIN-034 | TH | บัตรเครดิตองค์กรและเงินทดรองจ่าย
+บัตรเครดิตองค์กรออกให้แก่พนักงานระดับผู้จัดการขึ้นไป และพนักงานอื่นที่เดินทางเพื่อ
+ธุรกิจมากกว่าสี่ครั้งต่อปีโดยมีผู้บังคับบัญชาโดยตรงรับรอง วงเงินมาตรฐานต่อเดือนคือ
+150,000 บาท การขอเพิ่มวงเงินชั่วคราวสำหรับการเดินทางหรือกิจกรรมเฉพาะครั้งต้อง
+ได้รับอนุมัติจาก CFO
+บัตรเครดิตองค์กรใช้ได้เฉพาะค่าใช้จ่ายทางธุรกิจที่ชอบธรรม เช่น การเดินทางที่ได้รับ
+อนุมัติตามนโยบาย POL-HR-014 การรับรองลูกค้าภายใต้เกณฑ์ของนโยบาย POL-HR-030
+และการจัดซื้อที่ได้รับอนุมัติถูกต้องตามนโยบาย POL-FIN-008 ห้ามใช้บัตรองค์กรเพื่อ
+การใช้จ่ายส่วนตัวแม้จะชำระคืนภายหลังก็ตาม ใบเสร็จต้องบันทึกในระบบ Horizon Expense
+ภายในสิบสี่วันนับจากวันทำรายการ ผู้ถือบัตรที่มีรายการค้างกระทบยอดเกินหกสิบวัน
+จะถูกระงับบัตรโดยอัตโนมัติ
+พนักงานที่ไม่มีบัตรเครดิตองค์กรสามารถขอเงินทดรองจ่ายได้ไม่เกิน 40,000 บาทต่อ
+การเดินทางที่ได้รับอนุมัติ โดยจ่ายล่วงหน้าไม่เกินเจ็ดวันก่อนออกเดินทาง เงินทดรอง
+ต้องเคลียร์กับค่าใช้จ่ายจริงและเบี้ยเลี้ยงตามนโยบาย POL-FIN-021 ภายในสิบสี่วันหลัง
+เดินทางกลับ และคืนเงินส่วนที่เหลือเต็มจำนวน กรณีบัตรองค์กรสูญหายหรือถูกขโมย
+ต้องแจ้งธนาคารผู้ออกบัตรและฝ่ายการเงินภายในยี่สิบสี่ชั่วโมง
+
+### POL-IT-004 | EN | Passwords, Multi-Factor Authentication and Account Security
+This policy details the account security requirements summarised in POL-IT-011.
+Passwords must be at least fourteen characters; long passphrases are encouraged
+over complex short strings. Every credential must be unique to one system and
+stored in the corporate password manager — reusing a password across systems, or
+between company and personal accounts, is prohibited. Sharing an account or
+password with any other person, including a manager or IT staff, is never
+permitted; delegated access must be arranged through named accounts.
+Multi-factor authentication uses the corporate authenticator app or a
+company-issued hardware security key. SMS one-time codes are not an accepted
+factor. MFA fatigue attacks — repeated unexpected push notifications — must be
+denied and reported. Administrative privileges are granted just-in-time through
+the privileged access management system, expire after a maximum of twelve hours,
+and every privileged session is recorded. Service accounts must be vaulted, may
+not be used for interactive login, and their credentials rotate automatically
+every ninety days.
+An employee who suspects any credential has been exposed must change it
+immediately and report the exposure to the Security Operations Centre within one
+hour, following the incident process in POL-IT-011.
+
+### POL-IT-004 | TH | รหัสผ่าน การยืนยันตัวตนหลายปัจจัย และความปลอดภัยของบัญชี
+นโยบายนี้ขยายความข้อกำหนดความปลอดภัยของบัญชีที่สรุปไว้ในนโยบาย POL-IT-011
+รหัสผ่านต้องยาวอย่างน้อยสิบสี่ตัวอักษร แนะนำให้ใช้วลีรหัสผ่านแบบยาวมากกว่าชุด
+อักขระสั้นที่ซับซ้อน ข้อมูลรับรองแต่ละชุดต้องใช้เฉพาะระบบเดียวและจัดเก็บในโปรแกรม
+จัดการรหัสผ่านขององค์กร ห้ามใช้รหัสผ่านซ้ำระหว่างระบบ หรือซ้ำกับบัญชีส่วนตัว
+ห้ามแบ่งปันบัญชีหรือรหัสผ่านแก่ผู้ใดทั้งสิ้น รวมถึงผู้บังคับบัญชาและเจ้าหน้าที่ไอที
+การมอบสิทธิ์ทำงานแทนต้องดำเนินการผ่านบัญชีที่ระบุชื่อผู้ใช้ชัดเจน
+การยืนยันตัวตนหลายปัจจัยใช้แอปยืนยันตัวตนขององค์กรหรือกุญแจความปลอดภัยแบบ
+ฮาร์ดแวร์ที่บริษัทออกให้ รหัสผ่านครั้งเดียวทาง SMS ไม่ใช่ปัจจัยที่ยอมรับ หากได้รับ
+การแจ้งเตือนยืนยันตัวตนซ้ำ ๆ โดยไม่คาดคิด (การโจมตีแบบ MFA fatigue) ต้องกดปฏิเสธ
+และรายงานทันที สิทธิ์ระดับผู้ดูแลระบบให้แบบเฉพาะกิจผ่านระบบบริหารจัดการสิทธิ์พิเศษ
+หมดอายุภายในไม่เกินสิบสองชั่วโมง และมีการบันทึกทุกเซสชันที่ใช้สิทธิ์พิเศษ บัญชี
+เซอร์วิสต้องเก็บในระบบนิรภัย ห้ามใช้ล็อกอินแบบโต้ตอบ และหมุนเวียนข้อมูลรับรอง
+โดยอัตโนมัติทุกเก้าสิบวัน
+พนักงานที่สงสัยว่าข้อมูลรับรองใดรั่วไหล ต้องเปลี่ยนทันทีและรายงานต่อศูนย์ปฏิบัติการ
+ความมั่นคงปลอดภัยภายในหนึ่งชั่วโมง ตามกระบวนการรายงานเหตุในนโยบาย POL-IT-011
+
+### POL-IT-027 | EN | Personal Devices and Mobile Access
+Employees may access company email, calendar and the approved chat platform from
+a personal smartphone or tablet only after enrolling the device in the corporate
+mobile device management (MDM) programme. Enrolment creates a separate encrypted
+work profile; the company can see and wipe only that work profile, never personal
+photos, messages or applications. If an enrolled device is lost or stolen, the
+employee must report it within one hour under POL-IT-011 so the work profile can
+be wiped remotely.
+Enrolled personal devices must run a supported operating system version, have a
+screen lock, and must not be rooted or jailbroken. Data classified Confidential
+or Restricted under POL-IT-011 may not be stored on, or downloaded to, a personal
+device; the tiers and their handling rules apply unchanged. Personal laptops may
+not access production systems, source code repositories or customer databases
+under any circumstances — such access requires a company-managed device.
+Employees who choose to use a personal phone for work receive a monthly
+communication allowance of THB 500. Enrolment is voluntary; employees who prefer
+not to enrol a personal device may request a company phone where the role
+requires mobile availability. On separation, the work profile is removed on the
+last working day as part of the exit process in POL-HR-026.
+
+### POL-IT-027 | TH | อุปกรณ์ส่วนตัวและการเข้าถึงผ่านอุปกรณ์เคลื่อนที่
+พนักงานสามารถเข้าถึงอีเมล ปฏิทิน และแพลตฟอร์มแชทที่บริษัทอนุมัติจากสมาร์ตโฟน
+หรือแท็บเล็ตส่วนตัวได้ เฉพาะเมื่อลงทะเบียนอุปกรณ์ในระบบบริหารจัดการอุปกรณ์
+เคลื่อนที่ (MDM) ขององค์กรแล้วเท่านั้น การลงทะเบียนจะสร้างโปรไฟล์งานที่เข้ารหัส
+แยกต่างหาก บริษัทมองเห็นและลบข้อมูลได้เฉพาะโปรไฟล์งานเท่านั้น ไม่สามารถเข้าถึง
+รูปภาพ ข้อความ หรือแอปพลิเคชันส่วนตัวได้ หากอุปกรณ์ที่ลงทะเบียนสูญหายหรือถูก
+ขโมย พนักงานต้องรายงานภายในหนึ่งชั่วโมงตามนโยบาย POL-IT-011 เพื่อให้ลบโปรไฟล์
+งานจากระยะไกลได้
+อุปกรณ์ส่วนตัวที่ลงทะเบียนต้องใช้ระบบปฏิบัติการเวอร์ชันที่ยังได้รับการสนับสนุน ตั้งค่า
+ล็อกหน้าจอ และต้องไม่ผ่านการรูทหรือเจลเบรก ข้อมูลชั้นลับและลับที่สุดตามนโยบาย
+POL-IT-011 ห้ามจัดเก็บหรือดาวน์โหลดลงอุปกรณ์ส่วนตัว โดยเกณฑ์การจัดชั้นและการ
+จัดการข้อมูลมีผลบังคับไม่เปลี่ยนแปลง แล็ปท็อปส่วนตัวห้ามเข้าถึงระบบที่ใช้งานจริง
+คลังซอร์สโค้ด หรือฐานข้อมูลลูกค้าในทุกกรณี การเข้าถึงดังกล่าวต้องใช้อุปกรณ์ที่บริษัท
+บริหารจัดการเท่านั้น
+พนักงานที่เลือกใช้โทรศัพท์ส่วนตัวเพื่องานจะได้รับค่าสื่อสารเดือนละ 500 บาท การ
+ลงทะเบียนเป็นไปโดยสมัครใจ พนักงานที่ไม่ประสงค์ลงทะเบียนอุปกรณ์ส่วนตัวสามารถ
+ขอโทรศัพท์ของบริษัทได้หากตำแหน่งงานจำเป็นต้องติดต่อได้ระหว่างเดินทาง เมื่อพ้นสภาพ
+พนักงาน โปรไฟล์งานจะถูกลบในวันทำงานวันสุดท้ายตามกระบวนการในนโยบาย POL-HR-026
+
+### POL-OPS-015 | EN | Customer Data Protection and PDPA Compliance
+Siam Horizon Group processes customer personal data in accordance with the
+Personal Data Protection Act (PDPA). Personal data may be collected and used only
+for a documented lawful basis, and records of consent are kept in the central
+consent management system. Customer personal data is Restricted-tier data under
+POL-IT-011 and is explicitly out of scope for AI processing under POL-IT-019.
+Customers may exercise their rights of access, correction, deletion and porting
+through any service channel. Every such request must be forwarded to the Data
+Protection Officer on the day it is received and completed within thirty days.
+Customer data may be retained no longer than ten years after the relationship
+ends for financial records required by law, and no longer than two years for
+marketing data after the last active consent.
+A suspected personal data breach must be reported to the Data Protection Officer
+within twenty-four hours of discovery through the incident process in
+POL-IT-011. Where the breach is likely to pose a risk to individuals, the DPO
+notifies the regulator within seventy-two hours as required by law. Transfers of
+personal data outside Thailand, including to cloud services, require a DPO
+assessment before the contract is signed, in line with POL-FIN-008. All
+employees complete privacy training on joining and refresh it annually; staff in
+customer-facing and data-engineering roles refresh every six months.
+
+### POL-OPS-015 | TH | การคุ้มครองข้อมูลลูกค้าและการปฏิบัติตามกฎหมาย PDPA
+บริษัท สยามฮอไรซัน กรุ๊ป ประมวลผลข้อมูลส่วนบุคคลของลูกค้าตามพระราชบัญญัติ
+คุ้มครองข้อมูลส่วนบุคคล (PDPA) การเก็บรวบรวมและใช้ข้อมูลส่วนบุคคลต้องมีฐาน
+ทางกฎหมายที่บันทึกไว้เป็นหลักฐาน และจัดเก็บบันทึกความยินยอมในระบบบริหารจัดการ
+ความยินยอมกลาง ข้อมูลส่วนบุคคลของลูกค้าจัดเป็นข้อมูลชั้นลับที่สุดตามนโยบาย
+POL-IT-011 และอยู่นอกขอบเขตการประมวลผลด้วยปัญญาประดิษฐ์ตามนโยบาย POL-IT-019
+โดยชัดแจ้ง
+ลูกค้าสามารถใช้สิทธิขอเข้าถึง แก้ไข ลบ และโอนย้ายข้อมูลผ่านช่องทางบริการใดก็ได้
+คำขอทุกรายการต้องส่งต่อให้เจ้าหน้าที่คุ้มครองข้อมูลส่วนบุคคล (DPO) ภายในวันที่รับ
+เรื่อง และดำเนินการให้แล้วเสร็จภายในสามสิบวัน ข้อมูลลูกค้าเก็บรักษาได้ไม่เกินสิบปี
+หลังสิ้นสุดความสัมพันธ์สำหรับเอกสารทางการเงินที่กฎหมายกำหนด และไม่เกินสองปี
+สำหรับข้อมูลการตลาดนับจากความยินยอมครั้งล่าสุด
+เหตุสงสัยว่าข้อมูลส่วนบุคคลรั่วไหลต้องรายงานต่อ DPO ภายในยี่สิบสี่ชั่วโมงนับจาก
+พบเหตุ ผ่านกระบวนการรายงานเหตุในนโยบาย POL-IT-011 หากการรั่วไหลมีแนวโน้ม
+ก่อความเสี่ยงต่อเจ้าของข้อมูล DPO จะแจ้งหน่วยงานกำกับดูแลภายในเจ็ดสิบสองชั่วโมง
+ตามที่กฎหมายกำหนด การส่งหรือโอนข้อมูลส่วนบุคคลออกนอกประเทศไทย รวมถึงไปยัง
+บริการคลาวด์ ต้องผ่านการประเมินจาก DPO ก่อนลงนามสัญญา สอดคล้องกับนโยบาย
+POL-FIN-008 พนักงานทุกคนต้องอบรมด้านการคุ้มครองข้อมูลเมื่อเริ่มงานและทบทวน
+ทุกปี พนักงานที่ติดต่อลูกค้าโดยตรงและสายงานวิศวกรรมข้อมูลต้องทบทวนทุกหกเดือน

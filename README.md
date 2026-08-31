@@ -57,7 +57,7 @@ flowchart LR
 | Requirement | Where it lives |
 | --- | --- |
 | Framework: LangChain / LangGraph | `langgraph.StateGraph` in [`src/graph.py`](src/graph.py) |
-| `knowledge_base.txt` with sample content | [`knowledge_base.txt`](knowledge_base.txt) — 9 policies × EN + TH |
+| `knowledge_base.txt` with sample content | [`knowledge_base.txt`](knowledge_base.txt) — 17 policies × EN + TH |
 | **Data Retriever**: retrieval expert, does not answer | [`src/agents/retriever.py`](src/agents/retriever.py), prompt in [`src/agents/prompts.py`](src/agents/prompts.py) |
 | **Its tool**: custom Python function that reads the file and searches it | [`src/agents/tools.py`](src/agents/tools.py) → [`src/retrieval/`](src/retrieval/) |
 | Retriever output: raw relevant chunks | `handoff` node in [`src/graph.py`](src/graph.py) collects tool artifacts |
@@ -129,7 +129,11 @@ pytest                      # 30 offline tests, no API key needed
 4. **Fusion — Reciprocal Rank Fusion.** The two rankings are merged by rank
    rather than by score (`1/(k + rank)`), so no score normalisation is needed
    and neither ranker can dominate through raw magnitude.
-5. **Edition de-duplication.** Each policy exists twice, once per language.
+5. **Exact-code override.** A query that names a policy identifier
+   (`POL-IT-019`, "summarise POL-HR-018") is an unambiguous reference, so the
+   named section always ranks first — cross-references to that code in *other*
+   policies can never outrank the policy itself, however the rankers vote.
+6. **Edition de-duplication.** Each policy exists twice, once per language.
    Returning both would feed the Report Generator the same facts twice, so only
    one edition survives per policy — preferring the language the employee wrote
    in.
@@ -176,7 +180,7 @@ per claim, every sentence in the answer is traceable to a retrieved section, and
 questions the handbook does not cover get a plain "not covered" instead of an
 invention.
 
-**Why no vector database.** Nine policies is 18 chunks. A dense NumPy matrix and
+**Why no vector database.** Seventeen policies is 34 chunks. A dense NumPy matrix and
 a dot product beat FAISS or Chroma on both latency and dependency count at this
 size; `HybridRetriever.from_settings()` caches the vectors to `.cache/` so
 startup is instant after the first run.
@@ -188,7 +192,7 @@ Spending a round trip per turn on a question Unicode already answers is waste.
 ## 5. Project layout
 
 ```
-knowledge_base.txt          the knowledge base — 9 policies, EN + TH editions
+knowledge_base.txt          the knowledge base — 17 policies, EN + TH editions
 main.py                     CLI entry point
 server.py                   FastAPI + SSE, imports the same compiled graph
 web/index.html              the entire UI: no build step, no CDN, no node_modules

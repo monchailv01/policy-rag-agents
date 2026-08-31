@@ -39,6 +39,11 @@ def _thai_segmenter():
     return word_tokenize
 
 
+def extract_policy_ids(text: str) -> list[str]:
+    """Return the policy identifiers named in ``text``, lowercased."""
+    return _POLICY_ID.findall(text.lower())
+
+
 def tokenize(text: str) -> list[str]:
     """Split mixed Thai/English text into lowercase, stopword-filtered tokens."""
     lowered = text.lower()
