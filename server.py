@@ -275,7 +275,10 @@ async def index() -> FileResponse:
     page = WEB_DIR / "index.html"
     if not page.exists():
         raise HTTPException(status_code=404, detail="web/index.html is missing")
-    return FileResponse(page)
+    # no-cache = revalidate every visit. Without it, browsers apply heuristic
+    # caching to the Last-Modified header and can keep serving a stale page
+    # for days after a deploy.
+    return FileResponse(page, headers={"Cache-Control": "no-cache"})
 
 
 if __name__ == "__main__":
