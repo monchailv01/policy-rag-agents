@@ -7,6 +7,8 @@ the suite runs in under a second and needs no API key.
 
 from __future__ import annotations
 
+import zlib
+
 import numpy as np
 import pytest
 
@@ -19,7 +21,12 @@ from src.utils import detect_language
 
 
 class StubEmbedder:
-    """Deterministic bag-of-tokens embedder, so tests never hit the network."""
+    """Deterministic bag-of-tokens embedder, so tests never hit the network.
+
+    Uses ``zlib.crc32`` rather than ``hash()``: the built-in is salted per
+    process (PYTHONHASHSEED), which made bucket assignments — and therefore one
+    ranking assertion — differ from run to run. CRC32 is stable everywhere.
+    """
 
     name = "stub"
     dimension = 32
@@ -27,7 +34,7 @@ class StubEmbedder:
     def _vector(self, text: str) -> np.ndarray:
         vector = np.zeros(self.dimension, dtype=np.float32)
         for token in tokenize(text):
-            vector[hash(token) % self.dimension] += 1.0
+            vector[zlib.crc32(token.encode("utf-8")) % self.dimension] += 1.0
         norm = np.linalg.norm(vector)
         return vector / norm if norm else vector
 
