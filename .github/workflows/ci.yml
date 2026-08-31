@@ -1,0 +1,23 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      # The suite is deterministic and fully offline: it stubs the embedder and
+      # never calls an LLM, so only the lightweight dependencies are needed
+      # (no torch / sentence-transformers download in CI).
+      - name: Install test dependencies
+        run: |
+          pip install numpy pythainlp fastapi pydantic pydantic-settings python-dotenv pytest
+      - name: Run offline test suite
+        run: pytest -q

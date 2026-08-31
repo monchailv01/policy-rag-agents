@@ -1,23 +1,53 @@
-# Siam Horizon Policy Assistant
+<div align="center">
 
-A two-agent **LangGraph** system that answers employee questions about a company
-policy handbook using **Retrieval-Augmented Generation**.
+# 🏛️ Siam Horizon Policy Assistant
+
+**A two-agent LangGraph RAG system that answers company-policy questions in Thai and English — every claim cited, every step visible.**
+
+![LangGraph](https://img.shields.io/badge/LangGraph-two--agent%20orchestration-1C3C3C?logo=langchain&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-30%20passing%20offline-brightgreen?logo=pytest&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-SSE%20streaming-009688?logo=fastapi&logoColor=white)
+![Bilingual](https://img.shields.io/badge/bilingual-ไทย%20%2F%20EN-blueviolet)
+![License](https://img.shields.io/badge/license-MIT-blue)
+
+### [🌐 Try the live demo →](https://bbl.mcp-digitalstudio.com)
+
+*Quick links: [Assignment mapping](#1-how-this-maps-to-the-assignment) · [Quick start](#2-quick-start) · [The RAG mechanism](#3-the-rag-mechanism) · [Design decisions](#4-design-decisions) · [Screenshots](#6-screenshots)*
+
+<img src="screenshots/01-international-travel-en.png" width="88%" alt="The browser UI answering the assignment's sample query, with the pipeline panel showing each node as it runs">
+
+</div>
 
 A *Data Retriever* agent searches the knowledge base with a custom hybrid search
 tool and hands raw policy sections to a *Report Generator* agent, which turns
 them into a cited, non-redundant answer. The knowledge base is bilingual
 (Thai + English) and questions can be asked in either language.
 
-It ships with a CLI, a browser UI that visualises the pipeline as it runs, and a
-test suite.
+```mermaid
+flowchart LR
+    U([👤 user query]) --> C["contextualize<br/>rewrite follow-ups<br/>+ detect language"]
+    C --> R
+    subgraph A1["🤖 Agent 1 — Data Retriever"]
+        R["data_retriever<br/>retrieval expert,<br/>never answers"] -- "queries (1–3 rounds)" --> T[["🔍 search_knowledge_base<br/>BM25 + dense embeddings<br/>+ RRF fusion"]]
+        T -- "raw snippets" --> R
+    end
+    R --> H["handoff<br/>snippets only —<br/>no reasoning leaks"]
+    H --> G
+    subgraph A2["✍️ Agent 2 — Report Generator"]
+        G["report_generator<br/>no tools, cites<br/>every claim"]
+    end
+    G --> F(["📄 answer with [POL-xxx] citations"])
+```
 
-```
-┌──────────────┐   standalone   ┌────────────────┐   snippets   ┌──────────────────┐
-│ contextualize│──── query ────▶│ Data Retriever │──── only ───▶│ Report Generator │
-│  rewrite +   │                │   (Agent 1)    │              │    (Agent 2)     │
-│ detect lang  │                │  ⇅ search tool │              │     no tools     │
-└──────────────┘                └────────────────┘              └──────────────────┘
-```
+**Beyond the brief, in the same codebase:**
+
+- 🔎 **Hybrid retrieval** — Okapi BM25 (Thai-segmented) + multilingual dense embeddings, merged with Reciprocal Rank Fusion
+- 🌏 **Cross-language answers** — a Thai question about เบี้ยเลี้ยง retrieves the English *per diem* policy, and vice versa
+- 📺 **A live pipeline visualiser** — the browser UI lights up each graph node as it runs and shows every retrieval score
+- 💬 **Multi-turn memory** — follow-ups are rewritten into standalone queries before retrieval, conversations survive restarts
+- ✅ **30 deterministic offline tests** — chunking, tokenisation, BM25, fusion and rate limiting, no API key needed
+- 🚀 **One-command deployment** — systemd + Cloudflare Tunnel, rate-limited per client and per day
 
 ---
 
