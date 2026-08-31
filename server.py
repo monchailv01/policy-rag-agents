@@ -17,6 +17,7 @@ import uuid
 from contextlib import asynccontextmanager
 from pathlib import Path
 
+import httpx
 import uvicorn
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import FileResponse
@@ -45,6 +46,7 @@ NODE_LABELS = {
 class ChatRequest(BaseModel):
     question: str = Field(min_length=1, max_length=2000)
     thread_id: str | None = None
+    model: str = Field(default="cloud", pattern="^(cloud|local)$")
 
 
 @asynccontextmanager
@@ -53,7 +55,16 @@ async def lifespan(app: FastAPI):
     settings = get_settings()
     async with AsyncSqliteSaver.from_conn_string(str(settings.chat_db_file)) as saver:
         app.state.retriever = await asyncio.to_thread(get_retriever)
-        app.state.graph = build_graph(retriever=app.state.retriever, checkpointer=saver)
+        app.state.graphs = {
+            "cloud": build_graph(retriever=app.state.retriever, checkpointer=saver)
+        }
+        if settings.local_llm_base_url:
+            app.state.graphs["local"] = build_graph(
+                retriever=app.state.retriever,
+                checkpointer=saver,
+                llm_backend="local",
+            )
+        app.state.graph = app.state.graphs["cloud"]
         app.state.sessions = SessionStore(settings.chat_db_file)
         app.state.limiter = RateLimiter(
             per_ip=settings.rate_limit_per_ip,
@@ -72,6 +83,24 @@ app = FastAPI(title="Siam Horizon Policy Assistant", lifespan=lifespan)
 # --- metadata ---------------------------------------------------------------
 
 
+async def _probe_local_model(base_url: str) -> str | None:
+    """Ask the local server which model it actually has loaded right now.
+
+    llama.cpp answers on both the OpenAI shape (``data[].id``) and its own
+    (``models[].name``); either way the point is honesty — the picker shows the
+    real loaded model, or marks the option unavailable instead of failing later.
+    """
+    try:
+        async with httpx.AsyncClient(timeout=2.5) as client:
+            response = await client.get(base_url.rstrip("/") + "/models")
+            payload = response.json()
+        entry = (payload.get("data") or payload.get("models") or [{}])[0]
+        name = entry.get("id") or entry.get("name") or ""
+        return Path(str(name)).name or None
+    except Exception:
+        return None
+
+
 @app.get("/api/meta")
 async def meta() -> dict:
     """Everything the page needs to render its header, diagram and KB viewer."""
@@ -83,8 +112,29 @@ async def meta() -> dict:
             chunk.policy_id, {"policy_id": chunk.policy_id, "editions": {}}
         )
         entry["editions"][chunk.language] = {"title": chunk.title, "body": chunk.body}
+    models = [
+        {
+            "id": "cloud",
+            "label": settings.llm_model,
+            "model": settings.llm_model,
+            "note": "hosted · fast",
+            "available": True,
+        }
+    ]
+    if settings.local_llm_base_url:
+        loaded = await _probe_local_model(settings.local_llm_base_url)
+        models.append(
+            {
+                "id": "local",
+                "label": settings.local_llm_label,
+                "model": loaded or settings.local_llm_model,
+                "note": "single RTX 3090 · expect ~30\u201360 s per answer",
+                "available": loaded is not None,
+            }
+        )
     return {
         "llm_model": settings.llm_model,
+        "models": models,
         "index": retriever.describe(),
         "mermaid": app.state.graph.get_graph().draw_mermaid(),
         "policies": list(policies.values()),
@@ -147,7 +197,11 @@ async def chat(request: ChatRequest, http_request: Request) -> EventSourceRespon
     app.state.sessions.create(thread_id)
     app.state.sessions.record_turn(thread_id, request.question)
 
-    graph = app.state.graph
+    graph = app.state.graphs.get(request.model)
+    if graph is None:
+        raise HTTPException(
+            status_code=400, detail=f"Unknown or disabled model backend: {request.model}"
+        )
     config = {"configurable": {"thread_id": thread_id}}
 
     async def event_stream():

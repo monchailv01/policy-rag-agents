@@ -47,6 +47,7 @@ flowchart LR
 - 📺 **A live pipeline visualiser** — the browser UI lights up each graph node as it runs and shows every retrieval score
 - 💬 **Multi-turn memory** — follow-ups are rewritten into standalone queries before retrieval, conversations survive restarts
 - ✅ **30 deterministic offline tests** — chunking, tokenisation, BM25, fusion and rate limiting, no API key needed
+- 🖥️ **Pick your model in the UI** — the live demo can run the very same graph on a single RTX 3090 (llama.cpp + Qwen3-30B-A3B); slower (~30–60 s per answer), but proof that the provider-agnostic design is real
 - 🚀 **One-command deployment** — systemd + Cloudflare Tunnel, rate-limited per client and per day
 
 ---
@@ -242,10 +243,21 @@ Everything is driven by `.env` (see `.env.example`):
 | `RATE_LIMIT_PER_IP` | `100` | chat requests per client per window; `0` disables |
 | `RATE_LIMIT_WINDOW_SECONDS` | `300` | length of that window |
 | `RATE_LIMIT_DAILY_TOTAL` | `2000` | ceiling for the whole service per day; `0` disables |
+| `LOCAL_LLM_BASE_URL` | *(empty)* | any OpenAI-compatible server (llama.cpp, vLLM, Ollama); when set, the web UI grows a model picker |
+| `LOCAL_LLM_MODEL` / `LOCAL_LLM_LABEL` | `local` / `RTX 3090 (local)` | fallback model name and the label shown in the picker |
 
 Because the LLM is addressed through an OpenAI-*compatible* base URL, moving the
 whole system onto a local GPU is a change to `OPENAI_BASE_URL` and `LLM_MODEL` —
 no code change.
+
+That claim is demonstrated, not just stated: when `LOCAL_LLM_BASE_URL` points at
+a llama.cpp server (a Qwen3-30B-A3B on a single RTX 3090 in the live demo), the
+web UI offers a model picker. The server compiles one graph per backend over the
+same retriever and checkpointer, probes the local server at page load so the
+picker shows the model that is *actually* loaded — and warns that a 30B model on
+one consumer GPU takes ~30–60 s per answer instead of failing expectations
+silently. Same agents, same prompts, same tests; only the inference hardware
+changes.
 
 ## 8. Deployment
 

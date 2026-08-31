@@ -18,8 +18,10 @@ from src.llm import get_llm
 MAX_SEARCH_ROUNDS = 3
 
 
-def build_data_retriever(search_tool: BaseTool) -> tuple[BaseChatModel, str]:
+def build_data_retriever(
+    search_tool: BaseTool, backend: str = "cloud"
+) -> tuple[BaseChatModel, str]:
     """Return the tool-bound model and the system prompt for the retriever."""
-    llm = get_llm().bind_tools([search_tool])
+    llm = get_llm(backend=backend).bind_tools([search_tool])
     prompt = DATA_RETRIEVER_PROMPT.format(max_rounds=MAX_SEARCH_ROUNDS)
     return llm, prompt

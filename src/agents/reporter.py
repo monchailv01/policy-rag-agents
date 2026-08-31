@@ -30,9 +30,9 @@ Write the final answer for the employee now."""
 NO_SNIPPETS = "(The Data Retriever returned no policy sections.)"
 
 
-def build_report_generator() -> BaseChatModel:
+def build_report_generator(backend: str = "cloud") -> BaseChatModel:
     """Return the model used to synthesise the final answer (no tools bound)."""
-    return get_llm()
+    return get_llm(backend=backend)
 
 
 def render_system_prompt(language: str) -> str:

@@ -76,7 +76,7 @@ CAP_REACHED_NUDGE = (
 )
 
 
-def _force_handoff_note(scratchpad: list[AnyMessage]) -> str:
+def _force_handoff_note(scratchpad: list[AnyMessage], backend: str = "cloud") -> str:
     """Ask the retriever for its note when the round cap cut it off mid-search.
 
     The agent stops with an unanswered tool call, so it never wrote the note the
@@ -90,7 +90,9 @@ def _force_handoff_note(scratchpad: list[AnyMessage]) -> str:
     if not trimmed:
         return ""
     try:
-        response = get_llm().invoke([*trimmed, HumanMessage(CAP_REACHED_NUDGE)])
+        response = get_llm(backend=backend).invoke(
+            [*trimmed, HumanMessage(CAP_REACHED_NUDGE)]
+        )
         return str(response.content).strip()
     except Exception:  # a missing note must not fail the whole turn
         return ""
@@ -100,12 +102,17 @@ def build_graph(
     *,
     retriever: HybridRetriever | None = None,
     checkpointer: BaseCheckpointSaver | None = None,
+    llm_backend: str = "cloud",
 ):
-    """Compile the workflow. Pass a checkpointer to enable multi-turn memory."""
+    """Compile the workflow. Pass a checkpointer to enable multi-turn memory.
+
+    ``llm_backend`` selects which configured model family powers every LLM call
+    in this compiled graph — the hosted default, or the local GPU server.
+    """
     retriever = retriever or get_retriever()
     search_tool = build_search_tool(retriever)
-    retriever_llm, retriever_prompt = build_data_retriever(search_tool)
-    reporter_llm = build_report_generator()
+    retriever_llm, retriever_prompt = build_data_retriever(search_tool, llm_backend)
+    reporter_llm = build_report_generator(llm_backend)
 
     # -- nodes --------------------------------------------------------------
 
@@ -116,7 +123,7 @@ def build_graph(
 
         standalone = question
         if history:
-            rewritten = get_llm(temperature=0.0).invoke(
+            rewritten = get_llm(temperature=0.0, backend=llm_backend).invoke(
                 [
                     SystemMessage(CONTEXTUALIZE_PROMPT),
                     *history[-HISTORY_WINDOW:],
@@ -180,7 +187,7 @@ def build_graph(
             "",
         )
         if not note:
-            note = _force_handoff_note(scratchpad)
+            note = _force_handoff_note(scratchpad, llm_backend)
         return {
             "searches": searches,
             "snippets": snippets[:MAX_HANDOFF_SNIPPETS],

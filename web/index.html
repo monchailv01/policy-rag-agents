@@ -190,6 +190,11 @@ aside{background:#0d132a;border-right:1px solid var(--line);display:flex;flex-di
 
 @media(max-width:1240px){main{grid-template-columns:0 minmax(0,1fr) 340px}aside{display:none}}
 @media(max-width:900px){main{grid-template-columns:minmax(0,1fr)}#inspector{display:none}}
+#model-pick{background:#0d1330;border:1px solid #26305c;color:#dfe4ff;border-radius:8px;
+  padding:6px 8px;font:inherit;font-size:13px;max-width:220px}
+#model-pick:focus{outline:none;border-color:#4053a8}
+#model-note{display:none;color:#fbbf24;font-size:12px;padding:4px 2px 0}
+#model-note.on{display:block}
 </style>
 </head>
 <body>
@@ -210,8 +215,10 @@ aside{background:#0d132a;border-right:1px solid var(--line);display:flex;flex-di
       <div id="composer">
         <div class="composer-inner">
           <textarea id="q" rows="1" placeholder="Ask about a company policy…  ถามเรื่องนโยบายบริษัทได้เลย"></textarea>
+          <select id="model-pick" title="Model"></select>
           <button id="send">Ask</button>
         </div>
+        <div id="model-note"></div>
         <div class="hints" id="hints"></div>
       </div>
     </section>
@@ -443,7 +450,7 @@ async function ask(question) {
   const res = await fetch("/api/chat", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ question, thread_id: state.thread }),
+    body: JSON.stringify({ question, thread_id: state.thread, model: state.model || "cloud" }),
   });
 
   if (!res.ok) {
@@ -551,6 +558,29 @@ async function boot() {
       </div></div>`;
   }).join("");
   $$(".pol-h").forEach(h => h.onclick = () => h.parentElement.classList.toggle("open"));
+
+  const models = state.meta.models || [];
+  const pick = $("#model-pick");
+  if (models.length > 1) {
+    pick.innerHTML = models.map(m =>
+      `<option value="${esc(m.id)}"${m.available === false ? " disabled" : ""}>` +
+      `${esc(m.label)}${m.available === false ? " (not loaded)" : ""}</option>`).join("");
+    const chipLlm = $("#chips .chip b");   // first chip is the LLM chip
+    pick.onchange = () => {
+      state.model = pick.value;
+      const m = models.find(x => x.id === pick.value) || models[0];
+      const note = $("#model-note");
+      if (m.id === "local") {
+        note.textContent = `🖥️ ${m.model} — ${m.note}`;
+        note.classList.add("on");
+      } else {
+        note.classList.remove("on");
+      }
+      if (chipLlm) chipLlm.textContent = m.model;
+    };
+  } else {
+    pick.style.display = "none";
+  }
 
   $("#hints").innerHTML = HINTS.map(h => `<button class="hint">${esc(h)}</button>`).join("");
   $$(".hint").forEach(b => b.onclick = () => ask(b.textContent));

@@ -32,6 +32,15 @@ class Settings(BaseSettings):
     llm_model: str = "gpt-5-mini"
     llm_temperature: float = 0.2
 
+    # --- Optional second backend: a local OpenAI-compatible server ----------
+    # When LOCAL_LLM_BASE_URL is set (e.g. a llama.cpp server on an RTX 3090),
+    # the web UI grows a model picker so visitors can run the same graph on
+    # local hardware. Left empty, nothing changes.
+    local_llm_base_url: str = ""
+    local_llm_model: str = "local"
+    local_llm_api_key: str = "local"
+    local_llm_label: str = "RTX 3090 (local)"
+
     # --- Embeddings --------------------------------------------------------
     embedding_backend: Literal["local", "openai"] = "local"
     embedding_model: str = "intfloat/multilingual-e5-small"
